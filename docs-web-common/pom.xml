@@ -130,4 +130,9 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <site>
+      <url>file://${project.basedir}/target/site/docs-web-common</url>
+    </site>
+  </distributionManagement>
 </project>

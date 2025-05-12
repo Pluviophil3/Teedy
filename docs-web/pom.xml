@@ -272,4 +272,9 @@
       </build>
     </profile>
   </profiles>
+    <distributionManagement>
+    <site>
+      <url>file://${project.basedir}/target/site/docs-web</url>
+    </site>
+  </distributionManagement>
 </project>

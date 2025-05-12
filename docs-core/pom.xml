@@ -235,5 +235,9 @@
       </resource>
     </resources>
   </build>
-
+  <distributionManagement>
+    <site>
+      <url>file://${project.basedir}/target/site/docs-core</url>
+    </site>
+  </distributionManagement>
 </project>
