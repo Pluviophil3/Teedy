@@ -6,7 +6,17 @@ pipeline {
         DOCKER_HUB_CREDENTIALS = credentials('dockerhub_credentials') // Docker Hub credentials ID stored in Jenkins
         DOCKER_IMAGE = 'mjf128216989/teedy' // your Docker Hub user name and repository name
         DOCKER_TAG = "${env.BUILD_NUMBER}" // use build number as Docker image tag
+        DOCKER_USER = credentials('dockerhub_credentials').username
+    DOCKER_PASS = credentials('dockerhub_credentials').password
     }
+    
+
+    stage('Debug Docker Login') {
+        steps {
+            sh 'docker login -u $DOCKER_USER -p $DOCKER_PASS https://registry.hub.docker.com'
+        }
+    }
+
 
     stages {
         stage('Build') {
