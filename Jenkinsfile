@@ -9,14 +9,15 @@ pipeline {
     }
     
 
-    stage('Debug Docker Login') {
+    
+
+    stages {
+        stage('Debug Docker Login') {
         steps {
             sh 'docker login -u mjf1287216989 -p 623125qfQF https://registry.hub.docker.com'
         }
     }
 
-
-    stages {
         stage('Build') {
             steps {
                 checkout scmGit(
