@@ -1,0 +1,28 @@
+<!-- admin/register-request.html -->
+<div class="container">
+  <h2>注册申请审批</h2>
+  <table class="table table-bordered" ng-if="requests.length">
+    <thead>
+      <tr>
+        <th>用户名</th>
+        <th>邮箱</th>
+        <th>理由</th>
+        <th>申请时间</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="r in requests">
+        <td>{{ r.username }}</td>
+        <td>{{ r.email }}</td>
+        <td>{{ r.reason }}</td>
+        <td>{{ r.createDate | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+        <td>
+          <button class="btn btn-success btn-sm" ng-click="handle(r.id, true)">通过</button>
+          <button class="btn btn-danger btn-sm" ng-click="handle(r.id, false)">拒绝</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p ng-if="!requests.length">暂无待审核请求。</p>
+</div>

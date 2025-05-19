@@ -184,6 +184,8 @@
                 <application.mode>dev</application.mode>
                 <docs.home>../data/docs</docs.home>
               </systemProperties>
+              <scanIntervalSeconds>2</scanIntervalSeconds> <!-- 每 2 秒自动扫描变化 -->
+              <reload>automatic</reload> <!-- 自动重载 -->  
               <webApp>
                 <contextPath>/docs-web</contextPath>
                 <overrideDescriptor>${project.basedir}/src/dev/main/webapp/web-override.xml</overrideDescriptor>

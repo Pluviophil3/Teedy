@@ -86,6 +86,7 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
   $scope.openFileContent = function () {
     window.open('../api/file/' + $stateParams.fileId + '/data?size=content');
   };
+  // todo 
 
   /**
    * Print the file.

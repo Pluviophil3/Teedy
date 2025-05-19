@@ -28,6 +28,25 @@ angular.module('docs',
         }
       }
     })
+    .state('register-request', {
+      url: '/register-request',
+      views: {
+        'page': {
+          templateUrl: 'partial/docs/register-request.html',
+          controller: 'RegisterRequestController'
+        }
+      }
+    })
+    .state('admin-register-request', {
+      url: '/admin/register-request',
+      views: {
+        'page': {
+          templateUrl: 'partial/docs/admin/register-request.html',
+          controller: 'AdminRegisterRequestController'
+        }
+      }
+    })
+
     .state('passwordreset', {
       url: '/passwordreset/:key',
       views: {

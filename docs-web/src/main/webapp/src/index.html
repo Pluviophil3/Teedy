@@ -99,6 +99,10 @@
     <script src="app/docs/controller/usergroup/UserProfile.js" type="text/javascript"></script>
     <script src="app/docs/controller/usergroup/GroupProfile.js" type="text/javascript"></script>
     <script src="app/docs/service/User.js" type="text/javascript"></script>
+    <script src="app/docs/controller/AdminRegisterRequestController.js" type="text/javascript"></script>
+    <!-- 注册请求控制器 -->
+    <script src="app/docs/controller/RegisterRequestController.js" type="text/javascript"></script>
+
     <script src="app/docs/filter/Filesize.js" type="text/javascript"></script>
     <script src="app/docs/directive/SelectTag.js" type="text/javascript"></script>
     <script src="app/docs/directive/SelectRelation.js" type="text/javascript"></script>
@@ -143,6 +147,21 @@
           </li>
           <li ui-sref-active="{ active: 'user.**', active2: 'group.**' }">
             <a href="#/user"><span class="fas fa-user"></span> {{ 'index.nav_users_groups' | translate }}</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav" ng-show="userInfo.username == 'admin'">
+          <li ui-sref-active="{ active: 'admin-register-request' }">
+            <a href="#/admin/register-request">
+              <span class="fas fa-user-check"></span> 审核注册请求
+            </a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right" ng-show="userInfo.username == 'guest' || userInfo.anonymous">
+          <li>
+            <a href="#/register-request">
+              <span class="fas fa-user-plus"></span> 申请注册
+            </a>
           </li>
         </ul>
 
@@ -218,4 +237,5 @@
       </div>
     </div>
   </body>
+  
 </html>

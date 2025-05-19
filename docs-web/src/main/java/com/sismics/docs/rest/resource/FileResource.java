@@ -589,6 +589,7 @@ public class FileResource extends BaseResource {
                         .header(HttpHeaders.CONTENT_TYPE, "text/plain; charset=utf-8")
                         .build();
             }
+            // todo
 
             storedFile = DirectoryUtil.getStorageDirectory().resolve(fileId + "_" + size);
             mimeType = MimeType.IMAGE_JPEG; // Thumbnails are JPEG

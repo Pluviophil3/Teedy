@@ -13,6 +13,9 @@ create cached table T_DOCUMENT_TAG ( DOT_ID_C varchar(36) not null, DOT_IDDOCUME
 create cached table T_ACL ( ACL_ID_C varchar(36) not null, ACL_PERM_C varchar(30) not null, ACL_SOURCEID_C varchar(36) not null, ACL_TARGETID_C varchar(36) not null, ACL_DELETEDATE_D datetime, primary key (ACL_ID_C) );
 create cached table T_SHARE ( SHA_ID_C varchar(36) not null, SHA_NAME_C varchar(36), SHA_CREATEDATE_D datetime, SHA_DELETEDATE_D datetime, primary key (SHA_ID_C) );
 create cached table T_AUDIT_LOG ( LOG_ID_C varchar(36) not null, LOG_IDENTITY_C varchar(36) not null, LOG_CLASSENTITY_C varchar(50) not null, LOG_TYPE_C varchar(50) not null, LOG_MESSAGE_C varchar(1000), LOG_CREATEDATE_D datetime, primary key (LOG_ID_C) );
+drop table if exists T_REGISTRATION_REQUEST;
+create cached table T_REGISTRATION_REQUEST (REQ_ID_C varchar(36) not null, REQ_USERNAME_C varchar(50) not null, REQ_EMAIL_C varchar(100) not null, REQ_REASON_C varchar(1000), REQ_STATUS_C varchar(20) default 'PENDING' not null, REQ_CREATEDATE_D datetime not null, REQ_PROCESSEDDATE_D datetime, REQ_APPROVED_B bit, primary key (REQ_ID_C));
+
 
 alter table T_AUTHENTICATION_TOKEN add constraint FK_AUT_IDUSER_C foreign key (AUT_IDUSER_C) references T_USER (USE_ID_C) on delete restrict on update restrict;
 alter table T_DOCUMENT add constraint FK_DOC_IDUSER_C foreign key (DOC_IDUSER_C) references T_USER (USE_ID_C) on delete restrict on update restrict;
@@ -42,3 +45,4 @@ insert into T_ROLE(ROL_ID_C, ROL_NAME_C, ROL_CREATEDATE_D) values('admin', 'Admi
 insert into T_ROLE(ROL_ID_C, ROL_NAME_C, ROL_CREATEDATE_D) values('user', 'User', NOW());
 insert into T_ROLE_BASE_FUNCTION(RBF_ID_C, RBF_IDROLE_C, RBF_IDBASEFUNCTION_C, RBF_CREATEDATE_D) values('admin_ADMIN', 'admin', 'ADMIN', NOW());
 insert into T_USER(USE_ID_C, USE_IDLOCALE_C, USE_IDROLE_C, USE_USERNAME_C, USE_PASSWORD_C, USE_EMAIL_C, USE_THEME_C, USE_FIRSTCONNECTION_B, USE_CREATEDATE_D, USE_PRIVATEKEY_C) values('admin', 'en', 'admin', 'admin', '$2y$10$xg0EEKVUehutDI1m6qQhVeFz7SMQMl1jQzjf2KkVsR2c7aV2vyyjK', 'admin@localhost', 'default.less', true, NOW(), 'AdminPk');
+insert into T_REGISTRATION_REQUEST (REQ_ID_C, REQ_USERNAME_C, REQ_EMAIL_C, REQ_REASON_C, REQ_CREATEDATE_D, REQ_STATUS_C)VALUES ('1234', 'testuser', 'test@example.com', '测试申请理由', NOW(), 'PENDING');

@@ -20,6 +20,18 @@
       <div class="well-3d-background">
         <span class="fas fa-users"></span>
       </div>
+      <div class="well well-3d" ng-if="$root.principal.anonymous">
+        <p class="text-center">
+          <span class="fas fa-user-plus fa-2x text-muted"></span>
+        </p>
+        <p class="text-center">
+          您当前为访客用户。<br>
+          <a ui-sref="register-request" class="btn btn-sm btn-primary" style="margin-top: 10px;">
+            申请注册正式账户
+          </a>
+        </p>
+      </div>
+
     </div>
 
     <div class="well well-3d">
@@ -45,6 +57,19 @@
         <span class="fas fa-user"></span>
       </div>
     </div>
+
+    <div class="well well-3d" ng-if="$root.principal.anonymous">
+      <p class="text-center">
+        <span class="fas fa-user-plus fa-2x text-muted"></span>
+      </p>
+      <p class="text-center">
+        您当前为访客用户。<br>
+        <a ui-sref="register-request" class="btn btn-sm btn-primary" style="margin-top: 10px;">
+          申请注册正式账户
+        </a>
+      </p>
+    </div>
+
   </div>
 
   <div class="col-md-8">

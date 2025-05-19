@@ -92,6 +92,11 @@
       <param-value>org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>
     </init-param>
     <init-param>
+      <param-name>jersey.config.server.logging.verbosity</param-name>
+      <param-value>VERBOSE</param-value>
+    </init-param>
+
+    <init-param>
       <param-name>jersey.config.server.response.setStatusOverSendError</param-name>
       <param-value>true</param-value>
     </init-param>
