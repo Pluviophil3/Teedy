@@ -18,6 +18,7 @@ import com.sismics.docs.core.model.jpa.User;
 import com.sismics.docs.core.util.DirectoryUtil;
 import com.sismics.docs.core.util.EncryptionUtil;
 import com.sismics.docs.core.util.FileUtil;
+import com.sismics.docs.rest.util.TranslateUtil;
 import com.sismics.rest.exception.ClientException;
 import com.sismics.rest.exception.ForbiddenClientException;
 import com.sismics.rest.exception.ServerException;
@@ -571,7 +572,7 @@ public class FileResource extends BaseResource {
             @QueryParam("size") String size) {
         authenticate();
         
-        if (size != null && !Lists.newArrayList("web", "thumb", "content").contains(size)) {
+        if (size != null && !Lists.newArrayList("web", "thumb", "content", "translated").contains(size)) {
             throw new ClientException("SizeError", "Size must be web, thumb or content");
         }
 
@@ -588,6 +589,29 @@ public class FileResource extends BaseResource {
                 return Response.ok(Strings.nullToEmpty(file.getContent()))
                         .header(HttpHeaders.CONTENT_TYPE, "text/plain; charset=utf-8")
                         .build();
+            }
+            if (size.equals("translated")){
+                 String englishText = Strings.nullToEmpty(file.getContent());
+
+                // String translated = TranslateUtil.translateEnToZh(englishText);
+                // return Response.ok("这是翻译后的文本内容。")
+                //                 .header(HttpHeaders.CONTENT_TYPE, "text/plain; charset=utf-8")
+                //                 .build();
+                // return Response.ok(translated)
+                //     .header(HttpHeaders.CONTENT_TYPE, "text/plain; charset=utf-8")
+                //     .build();
+                try {
+                    String translated = TranslateUtil.translateZhToEn(englishText);
+                    return Response.ok(translated)
+                        .header(HttpHeaders.CONTENT_TYPE, "text/plain; charset=utf-8")
+                        .build();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                        .entity("翻译失败：" + e.getMessage())
+                        .build();
+                }
+                
             }
             // todo
 

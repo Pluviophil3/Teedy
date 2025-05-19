@@ -6,7 +6,7 @@
 angular.module('docs').controller('FileView', function($uibModal, $state, $stateParams, $timeout) {
   var modal = $uibModal.open({
     windowClass: 'modal modal-fileview',
-    templateUrl: 'partial/docs/file.view.html',
+    templateUrl: 'partial/docs/file.view.html?v=' + new Date().getTime(),
     controller: 'FileModalView',
     size: 'lg'
   });

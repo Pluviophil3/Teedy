@@ -3467,3 +3467,219 @@ java.lang.NullPointerException: Cannot invoke "org.apache.lucene.store.Directory
 19 5月 2025 17:19:13,201 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
 19 5月 2025 17:19:13,202 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
 19 5月 2025 17:19:13,423 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 17:51:44,941 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 17:51:44,943 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 17:52:18,597 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 17:52:19,051 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 17:52:19,053 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 17:52:19,054 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 17:52:19,054 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 17:52:20,436 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 17:52:20,466 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 17:52:20,525 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 17:52:20,573 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 17:52:20,576 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 17:52:20,577 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 17:52:20,778 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 17:52:20,779 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 17:52:20,936 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 17:53:12,614 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=cc034616-e550-4d4d-b08d-f27663208f75} 
+19 5月 2025 17:53:12,844 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: ea53f69c-4f6a-46ee-8fe1-ea9a089223a9 
+19 5月 2025 17:53:12,850 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=ea53f69c-4f6a-46ee-8fe1-ea9a089223a9, language=eng} 
+19 5月 2025 17:53:12,850 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=cc034616-e550-4d4d-b08d-f27663208f75} 
+19 5月 2025 17:53:12,956 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+19 5月 2025 17:53:13,074 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,074 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,090 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,090 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,124 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,124 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,134 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,134 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,271 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=ea53f69c-4f6a-46ee-8fe1-ea9a089223a9, name=teedy-new-feature.pdf} 
+19 5月 2025 17:53:13,290 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,290 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,292 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,293 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,301 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,301 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,305 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,305 WARN org.apache.fontbox.ttf.CmapSubtable.processSubtype4(CmapSubtable.java:452) cmap format 4 subtable is empty 
+19 5月 2025 17:53:13,313 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 42ms: ea53f69c-4f6a-46ee-8fe1-ea9a089223a9 
+19 5月 2025 17:53:13,336 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: ea53f69c-4f6a-46ee-8fe1-ea9a089223a9 
+19 5月 2025 17:55:23,974 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 17:55:23,974 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 17:55:33,884 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 17:55:34,273 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 17:55:34,276 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 17:55:34,276 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 17:55:34,277 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 17:55:35,606 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 17:55:35,638 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 17:55:35,693 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 17:55:35,744 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 17:55:35,747 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 17:55:35,748 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 17:55:35,986 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 17:55:35,988 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 17:55:36,093 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 17:56:40,402 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 17:56:40,403 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 17:56:49,762 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 17:56:50,143 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 17:56:50,145 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 17:56:50,145 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 17:56:50,146 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 17:56:51,431 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 17:56:51,464 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 17:56:51,532 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 17:56:51,584 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 17:56:51,587 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 17:56:51,588 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 17:56:51,806 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 17:56:51,807 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 17:56:51,931 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:08:01,018 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:08:01,020 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:08:13,465 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:08:13,863 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:08:13,865 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:08:13,866 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:08:13,866 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:08:15,093 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:08:15,121 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:08:15,175 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:08:15,233 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:08:15,236 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:08:15,236 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:08:15,448 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:08:15,449 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:08:15,569 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:12:07,546 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:12:07,547 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:12:16,924 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:12:17,294 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:12:17,297 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:12:17,297 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:12:17,297 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:12:18,469 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:12:18,499 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:12:18,560 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:12:18,614 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:12:18,617 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:12:18,617 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:12:18,778 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:12:18,779 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:12:18,930 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:18:54,004 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:18:54,006 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:19:04,102 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:19:04,468 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:19:04,471 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:19:04,471 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:19:04,472 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:19:05,706 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:19:05,733 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:19:05,785 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:19:05,835 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:19:05,838 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:19:05,839 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:19:06,079 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:19:06,080 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:19:06,171 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:34:15,453 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:34:15,454 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:34:24,773 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:34:25,131 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:34:25,134 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:34:25,134 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:34:25,134 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:34:26,344 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:34:26,369 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:34:26,421 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:34:26,474 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:34:26,477 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:34:26,478 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:34:26,673 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:34:26,673 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:34:26,794 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:38:54,078 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:38:54,079 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:39:04,146 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:39:04,531 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:39:04,534 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:39:04,534 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:39:04,534 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:39:05,749 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:39:05,776 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:39:05,829 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:39:05,884 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:39:05,887 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:39:05,888 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:39:06,054 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:39:06,055 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:39:06,191 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:44:56,055 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:44:56,057 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:45:05,415 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:45:05,793 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:45:05,795 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:45:05,796 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:45:05,796 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:45:07,053 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:45:07,082 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:45:07,141 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:45:07,193 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:45:07,195 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:45:07,196 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:45:07,373 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:45:07,374 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:45:07,515 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 18:48:04,562 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 18:48:04,563 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 18:48:14,071 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:48:14,449 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 18:48:14,452 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 18:48:14,453 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 18:48:14,453 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 18:48:15,676 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 18:48:15,708 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 18:48:15,773 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 18:48:15,824 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 18:48:15,826 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 18:48:15,827 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 18:48:16,005 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 18:48:16,005 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 18:48:16,146 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 19:05:30,478 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 19:05:30,480 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 19:05:40,675 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 19:05:41,051 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 19:05:41,053 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 19:05:41,053 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 19:05:41,053 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 19:05:42,253 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 19:05:42,282 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 19:05:42,337 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 19:05:42,387 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 19:05:42,390 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 19:05:42,391 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 19:05:42,575 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 19:05:42,576 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 19:05:42,757 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 
+19 5月 2025 19:08:41,760 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+19 5月 2025 19:08:41,761 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+19 5月 2025 19:08:51,851 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 19:08:52,257 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 5月 2025 19:08:52,260 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+19 5月 2025 19:08:52,260 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 5月 2025 19:08:52,260 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 5月 2025 19:08:53,784 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 5月 2025 19:08:53,814 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:132) Using file Lucene storage: ../data/docs/lucene 
+19 5月 2025 19:08:53,873 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:144) Checking index health and version 
+19 5月 2025 19:08:53,936 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 5月 2025 19:08:53,939 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+19 5月 2025 19:08:53,940 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+19 5月 2025 19:08:54,239 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+19 5月 2025 19:08:54,241 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+19 5月 2025 19:08:54,351 WARN org.glassfish.jersey.internal.util.PropertiesHelper.convertValue(PropertiesHelper.java:321) There is no way how to transform value "VERBOSE" [java.lang.String] to type [org.glassfish.jersey.logging.LoggingFeature$Verbosity]. 

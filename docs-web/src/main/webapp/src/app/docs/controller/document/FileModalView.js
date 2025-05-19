@@ -86,7 +86,25 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
   $scope.openFileContent = function () {
     window.open('../api/file/' + $stateParams.fileId + '/data?size=content');
   };
-  // todo 
+  // 显示翻译 PDF 的控制变量
+  $scope.showTranslated = false;
+
+  // 切换翻译模式
+  $scope.toggleTranslation = function () {
+    $scope.showTranslated = !$scope.showTranslated;
+
+    // 设置翻译或原始 PDF 的 URL
+    if ($scope.showTranslated) {
+      $scope.trustedFileUrl = $sce.trustAsResourceUrl('../api/file/' + $stateParams.fileId + '/data/translated');
+    } else {
+      $scope.trustedFileUrl = $sce.trustAsResourceUrl('../api/file/' + $stateParams.fileId + '/data');
+    }
+  };
+  $scope.openTranslatedContent = function () {
+    const url = '../api/file/' + $stateParams.fileId + '/data?size=translated';
+    window.open(url, '_blank');
+  };
+
 
   /**
    * Print the file.

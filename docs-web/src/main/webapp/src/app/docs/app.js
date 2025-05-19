@@ -3,6 +3,10 @@
 /**
  * Teedy application.
  */
+// angular.module('docs').run(function($templateCache) {
+//   $templateCache.removeAll(); // 每次加载都清空缓存
+// });
+
 angular.module('docs',
     // Dependencies
     ['ui.router', 'ui.bootstrap', 'dialog', 'ngProgress', 'monospaced.qrcode', 'yaru22.angular-timeago', 'ui.validate',
